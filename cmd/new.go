@@ -21,9 +21,11 @@ var newCmd = &cobra.Command{
 		}
 		app.Logger.Printf("Creating new site: %s", name)
 
-		// TODO: Implement the actual site creation logic here
+		err := app.Project.Create(name)
 
-		return nil
+		// TODO: add biolerplate code
+
+		return err
 	},
 }
 
