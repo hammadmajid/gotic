@@ -13,7 +13,7 @@ type App struct {
 }
 
 func New() (*App, error) {
-	logger := log.New(os.Stdout, "", log.Ldate|log.Ltime)
+	logger := log.New(os.Stdout, "", 0)
 	project, err := project.New()
 	if err != nil {
 		return nil, err
