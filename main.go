@@ -3,6 +3,7 @@ package main
 import (
 	"log"
 
+	"github.com/hammadmajid/gotic/cmd"
 	"github.com/hammadmajid/gotic/internal/app"
 )
 
@@ -12,5 +13,5 @@ func main() {
 		log.Fatalf("Failed to initalize app")
 	}
 
-	app.Logger.Println("gotic")
+	cmd.Execute(app)
 }
